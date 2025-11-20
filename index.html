@@ -1,231 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <div class="container">
-      <!-- Sidebar content -->
-      <div class="sidebar">
-        <div class="branding">
-          <img src="#" alt="" />
+    <div class="dashboard-container">
+      
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <i class="fa-solid fa-layer-group fa-2x"></i>
           <h1>Dashboard</h1>
         </div>
-        <div class="navigation">
+        
+        <nav class="sidebar-nav">
           <ul>
-            <li><img src="#" alt="" /><a href="#">Home</a></li>
-            <li><img src="#" alt="" /><a href="#">Profile</a></li>
-            <li><img src="#" alt="" /><a href="#">Messages</a></li>
-            <li><img src="#" alt="" /><a href="#">History</a></li>
-            <li><img src="#" alt="" /><a href="#">Tasks</a></li>
-            <li><img src="#" alt="" /><a href="#">Communities</a></li>
+            <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+            <li><a href="#"><i class="fa-solid fa-message"></i> Messages</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+            <li><a href="#"><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i> Communities</a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i> Support</a></li>
+            <li><a href="#"><i class="fa-solid fa-shield-halved"></i> Privacy</a></li>
           </ul>
         </div>
-        <div class="additional">
-          <ul>
-            <li><img src="#" alt="" /><a href="#">Settings</a></li>
-            <li><img src="#" alt="" /><a href="#">Support</a></li>
-            <li><img src="#" alt="" /><a href="#">Privacy</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Header content -->
+      </aside>
+
+      <!-- HEADER -->
       <header class="header">
-        <div class="ContainerHeader">
-          <div class="search">
-            <img src="#" alt="" />
-            <input type="text" placeholder="Search" />
+        <!-- Linha Superior: Busca e Perfil Pequeno -->
+        <div class="header-top">
+          <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search..." />
           </div>
-          <div class="profile">
-            <img src="#" alt="" />
-            <img src="#" alt="" />
-            <a href="#">Morgan Oakley</a>
+          <div class="user-menu">
+            <i class="fa-solid fa-bell notification-icon"></i>
+            <img src="https://i.pravatar.cc/150?img=1" alt="User Avatar" class="avatar-small" />
+            <span class="user-name">Morgan Oakley</span>
           </div>
-          <div class="profile2">
-            <img src="#" alt="" />
-            <p>Hi there,</p>
-            <p>Morgan Oakley (@morgan)</p>
+        </div>
+
+        <!-- Linha Inferior: Boas-vindas e Ações -->
+        <div class="header-bottom">
+          <div class="user-welcome">
+            <img src="https://i.pravatar.cc/150?img=1" alt="User Avatar" class="avatar-large" />
+            <div class="welcome-text">
+              <p>Hi there,</p>
+              <h2>Morgan Oakley (@morgan)</h2>
+            </div>
           </div>
-          <div class="buttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+          <div class="header-actions">
+            <button class="btn-primary">New</button>
+            <button class="btn-primary">Upload</button>
+            <button class="btn-primary">Share</button>
           </div>
         </div>
       </header>
-      <!-- Main content -->
+
+      <!-- MAIN CONTENT -->
       <main class="main-content">
-        <div class="containerMain">
-          <div class="cards">
-            <h1>Your Projects</h1>
-            <div class="card">
-              <div class="textCard">
-                <p>Super Cool Project</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus rerum minus ducimus, placeat ratione deserunt
-                  aperiam beatae nesciunt! Earum distinctio expedita quod
-                  quisquam numquam vitae, libero nulla delectus facilis
-                  laboriosam!
-                </p>
+        
+        <!-- Coluna da Esquerda: Projetos -->
+        <section class="projects-section">
+          <h2 class="section-title">Your Projects</h2>
+          <div class="projects-grid">
+            
+            <!-- Card 1 -->
+            <article class="project-card">
+              <div class="card-body">
+                <h3>Super Cool Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rerum minus ducimus, placeat ratione deserunt aperiam beatae nesciunt!</p>
               </div>
-              <div class="share">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="card-actions">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-share-nodes"></i>
               </div>
-            </div>
-            <div class="card">
-              <div class="textCard">
-                <p>Less Cool Project</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus rerum minus ducimus, placeat ratione deserunt
-                  aperiam beatae nesciunt! Earum distinctio expedita quod
-                  quisquam numquam vitae, libero nulla delectus facilis
-                  laboriosam!
-                </p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="project-card">
+              <div class="card-body">
+                <h3>Less Cool Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rerum minus ducimus, placeat ratione deserunt aperiam beatae nesciunt!</p>
               </div>
-              <div class="share">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="card-actions">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-share-nodes"></i>
               </div>
-            </div>
-            <div class="card">
-              <div class="textCard">
-                <p>Impossible App</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus rerum minus ducimus, placeat ratione deserunt
-                  aperiam beatae nesciunt! Earum distinctio expedita quod
-                  quisquam numquam vitae, libero nulla delectus facilis
-                  laboriosam!
-                </p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="project-card">
+              <div class="card-body">
+                <h3>Impossible App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rerum minus ducimus, placeat ratione deserunt aperiam beatae nesciunt!</p>
               </div>
-              <div class="share">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="card-actions">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-share-nodes"></i>
               </div>
-            </div>
-            <div class="card">
-              <div class="textCard">
-                <p>Easy Peasy App</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus rerum minus ducimus, placeat ratione deserunt
-                  aperiam beatae nesciunt! Earum distinctio expedita quod
-                  quisquam numquam vitae, libero nulla delectus facilis
-                  laboriosam!
-                </p>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="project-card">
+              <div class="card-body">
+                <h3>Easy Peasy App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rerum minus ducimus, placeat ratione deserunt aperiam beatae nesciunt!</p>
               </div>
-              <div class="share">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="card-actions">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-share-nodes"></i>
               </div>
-            </div>
-            <div class="card">
-              <div class="textCard">
-                <p>Ad Blocker</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus rerum minus ducimus, placeat ratione deserunt
-                  aperiam beatae nesciunt! Earum distinctio expedita quod
-                  quisquam numquam vitae, libero nulla delectus facilis
-                  laboriosam!
-                </p>
+            </article>
+
+             <!-- Card 5 -->
+             <article class="project-card">
+              <div class="card-body">
+                <h3>Ad Blocker</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rerum minus ducimus, placeat ratione deserunt aperiam beatae nesciunt!</p>
               </div>
-              <div class="share">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="card-actions">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-share-nodes"></i>
               </div>
-            </div>
-            <div class="card">
-              <div class="textCard">
-                <p>Money Maker</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus rerum minus ducimus, placeat ratione deserunt
-                  aperiam beatae nesciunt! Earum distinctio expedita quod
-                  quisquam numquam vitae, libero nulla delectus facilis
-                  laboriosam!
-                </p>
+            </article>
+
+             <!-- Card 6 -->
+             <article class="project-card">
+              <div class="card-body">
+                <h3>Money Maker</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus rerum minus ducimus, placeat ratione deserunt aperiam beatae nesciunt!</p>
               </div>
-              <div class="share">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="card-actions">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Coluna da Direita: Widgets (Announcements + Trending) -->
+        <aside class="dashboard-widgets">
+          
+          <!-- Widget 1: Announcements -->
+          <div class="widget announcements">
+            <h2 class="section-title">Announcements</h2>
+            <div class="widget-container">
+              <div class="announcement-item">
+                <h4>Site Maintenance</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt sequi.</p>
+              </div>
+              <div class="divider"></div>
+              <div class="announcement-item">
+                <h4>Community Share Day</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt sequi.</p>
+              </div>
+              <div class="divider"></div>
+              <div class="announcement-item">
+                <h4>Updated Privacy Policy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt sequi.</p>
               </div>
             </div>
           </div>
-          <div class="right-side-Container">
-            <div class="announcements">
-              <p>Announcements</p>
-              <div class="Box-announces">
-                <div class="announces">
-                  <p class="titleAnnouncements">Site Maintenance</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    incidunt sequi, voluptatibus ratione vitae ea hic itaque
-                    fugiat recusandae totam natus. Ullam porro, sequi doloremque
-                    blanditiis quo quos facere libero!
-                  </p>
-                </div>
-                <br />
-                <div class="announces">
-                  <p class="titleAnnouncements">Community Share Day</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    incidunt sequi, voluptatibus ratione vitae ea hic itaque
-                    fugiat recusandae totam natus. Ullam porro, sequi doloremque
-                    blanditiis quo quos facere libero!
-                  </p>
-                </div>
-                <br />
-                <div class="announces">
-                  <p class="titleAnnouncements">Updated Privacy Policy</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    incidunt sequi, voluptatibus ratione vitae ea hic itaque
-                    fugiat recusandae totam natus. Ullam porro, sequi doloremque
-                    blanditiis quo quos facere libero!
-                  </p>
+
+          <!-- Widget 2: Trending -->
+          <div class="widget trending">
+            <h2 class="section-title">Trending</h2>
+            <div class="widget-container">
+              
+              <div class="trending-item">
+                <img src="https://i.pravatar.cc/150?img=12" alt="User" class="avatar-small">
+                <div class="trending-info">
+                  <p class="trend-user">@tegan</p>
+                  <p class="trend-desc">World Peace Builder</p>
                 </div>
               </div>
-            </div>
-            <div class="trending">
-              <p>Trending</p>
-              <div class="trendsProfiles">
-                <div class="trendingProfiles">
-                  <img src="#" alt="" />
-                  <p>@tegan</p>
-                  <p>World Peace Builder</p>
-                </div>
-                <div class="trendingProfiles">
-                  <img src="#" alt="" />
-                  <p>@morgan</p>
-                  <p>Super Cool Project</p>
-                </div>
-                <div class="trendingProfiles">
-                  <img src="#" alt="" />
-                  <p>@kendall</p>
-                  <p>Life Changing App</p>
-                </div>
-                <div class="trendingProfiles">
-                  <img src="#" alt="" />
-                  <p>@alex</p>
-                  <p>No Traffic Maker</p>
+
+              <div class="trending-item">
+                <img src="https://i.pravatar.cc/150?img=32" alt="User" class="avatar-small">
+                <div class="trending-info">
+                  <p class="trend-user">@morgan</p>
+                  <p class="trend-desc">Super Cool Project</p>
                 </div>
               </div>
+
+              <div class="trending-item">
+                <img src="https://i.pravatar.cc/150?img=53" alt="User" class="avatar-small">
+                <div class="trending-info">
+                  <p class="trend-user">@kendall</p>
+                  <p class="trend-desc">Life Changing App</p>
+                </div>
+              </div>
+
+              <div class="trending-item">
+                <img src="https://i.pravatar.cc/150?img=11" alt="User" class="avatar-small">
+                <div class="trending-info">
+                  <p class="trend-user">@alex</p>
+                  <p class="trend-desc">No Traffic Maker</p>
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
+
+        </aside>
       </main>
     </div>
   </body>
